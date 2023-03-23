@@ -1,6 +1,7 @@
 package aula3.exemplos;
 
 public class Quadrado {
+    public static final String MENSAGEM_LADO_INVALIDO = "Lado deve ser maior que zero";
     private double lado;
 
     public Quadrado(double lado) {
@@ -17,7 +18,7 @@ public class Quadrado {
 
     public void setLado(double lado) {
         if (lado <= 0.0) {
-            throw new IllegalArgumentException("Lado deve ser maior que zero");
+            throw new IllegalArgumentException(MENSAGEM_LADO_INVALIDO);
         }
 
         this.lado = lado;
