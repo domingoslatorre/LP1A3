@@ -13,5 +13,7 @@ public class Main {
         System.out.println(funcionario.getSalario());
         System.out.println(gerente.getSalario());
 
+
+        ContaCorrente c = new ContaCorrente(1, 0);
     }
 }
